@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+
+int main()
+{
+    char str[100];
+    int i, flag = 0;
+
+    printf("Arpit Shukla\n1901330100062\n\n\n");
+    printf("Enter your string: ");
+    fgets(str, 50, stdin);
+
+    for(i=0; i<strlen(str); i++)
+    {
+        if(str[i] == 'a' && str[i+1] == 'a')
+        {
+            flag = 1;
+            break;
+        }
+    }
+    
+    (flag == 1) ? printf("String accepted") : printf("String not accepted."); 
+
+    return 0;
+}
